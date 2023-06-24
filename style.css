@@ -1,0 +1,228 @@
+.zalupa {
+    text-decoration: none;
+    font-family: Arial;
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.zalupa:hover {
+    background-color: whitesmoke;
+}
+
+.vhod {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+}
+
+.verh {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reg {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.nst {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    border-radius: 0px;
+    background-color: #005efa;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.nst:hover {
+    background-color: blue;
+}
+
+.nov {
+    width: 300px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 20px;
+}
+
+.pov {
+    background-color: #005efa;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.seriy {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    border-radius: 0px;
+    background-color: #3a3a3a;
+    padding: 6px;
+}
+
+.seriyglav {
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 30px;
+    padding-top: 10px;
+    background-color: #3a3a3a;
+}
+
+.negr {
+    margin-top: 10px;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.niz {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.niz-1 {
+    margin: 0 auto;
+    display: block;
+    width: 940px;
+}
+
+.niz-2 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.rightniz {
+    position: relative;
+    margin-left: auto;
+}
+
+.rightniz-2 {
+    position: relative;
+    background-color: var(--paradigm-color-bg);
+    flex-direction: column;
+    max-width: 800px;
+    display: flex;
+}
+
+.rightniz-3 {
+    align-items: center;
+    background-color: inherit;
+    display: flex;
+}
+
+.rightniz-4 {
+    white-space: nowrap;
+    padding-right: var(--paradigm-x3);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.rightniz-5 {
+    display: flex;
+    flex-grow: 2;
+}
+
+.rightniz-6 {
+    /*margin-right: var(--paradigm-x3);*/
+    flex: 1 1 auto;
+    position: relative;
+    margin-right: 100px;
+}
+
+.list:hover {
+    background-color: white;
+    color: #3a3a3a;
+}
+.dropbtn {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    border-radius: 0px;
+    background-color: #3a3a3a;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 28px;
+    padding-top: 0px;
+    background-color: #3a3a3a;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+    text-decoration-color: black;
+    color: black;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {display:block;}
+
+.background{
+    display: flex;
+    flex-direction: column;
+margin-right: -8px;
+    margin-left: -8px;
+    height: 60px;
+}
+.podorange{
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 17px;
+    color: #005bd1;
+    border-radius: 0px;;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 28px;
+    padding-top: 0px;
+}
