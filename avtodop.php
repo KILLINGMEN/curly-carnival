@@ -168,11 +168,12 @@ flex-direction: column;
                 foreach ($cells as $cell)
                 {
 
-                    echo '<a href="dann.php?type=BMW M2 купе" style="display: flex; flex-direction: column; margin: 20px;">
+                    echo '
+<!-- мне кажется тут не требуется ссылка - это конечная страница деталей машины-->
                         <div style="width: 180px; height: 112px">
                             <img src="'.$cell.'" style="width: 100%">
                         </div>
-                        '.implode($_SESSION['neskolkom'][$c]).'</a>';
+                        '.implode($_SESSION['neskolkom'][$c]);
 
                     $c++;
                 }
