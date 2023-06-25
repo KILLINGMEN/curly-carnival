@@ -171,7 +171,7 @@
                 foreach ($cells as $cell)
                 {
 
-                    echo '<a href="avtodop.php ?id=?'.$_SESSION['type_id'][$c].'" style="display: flex; flex-direction: column; margin: 20px;">
+                    echo '<a href="avtodop.php?id='.$_SESSION['type_id'][$c].'" style="display: flex; flex-direction: column; margin: 20px;">
                         <div style="width: 180px; height: 112px">
                             <img src="'.$cell.'" style="width: 100%">
                         </div>
