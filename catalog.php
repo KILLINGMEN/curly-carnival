@@ -39,7 +39,7 @@
     <div>
         <div class="verh pov">
             <div style="margin-left: 100px">
-                <a href="index.php"><img src="Снимок.PNG"></a>
+                <a href="index.php"><img src="Снимок.png"></a>
             </div>
             <span>
                 <span>
@@ -163,23 +163,17 @@
             Модели
         </h3>
         <div style="display: flex; flex-direction: row">
-            <?php
-            $c = 0;
+<?php
 
-            //               echo $_SESSION['neskolkon'];
-            foreach ($_SESSION['neskolkon'] as $cells){
-                foreach ($cells as $cell)
-                {
 
-                    echo '<a href="avtodop.php ?id=?'.$_SESSION['type_id'][$c].'" style="display: flex; flex-direction: column; margin: 20px;">
+foreach ($_SESSION['car_types'] as $index => $model){
+echo '<a href="dann.php?id='.$model[0].'" style="display: flex; flex-direction: column; margin: 20px;">
                         <div style="width: 180px; height: 112px">
-                            <img src="'.$cell.'" style="width: 100%">
+                            <img src="'.$model[2].'" style="width: 100%">
                         </div>
-                        '.implode($_SESSION['neskolkom'][$c]).'</a>';
+                        '.$model[1].'</a>';
+}
 
-                    $c++;
-                }
-            }
             ?>
         </div>
     </div>
