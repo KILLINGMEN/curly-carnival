@@ -1,5 +1,6 @@
 <!doctype html>
-<? session_start(); ?>
+<?php session_start();
+?>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -159,27 +160,6 @@ margin-top: 20px;
 display: flex;
 flex-direction: column;
 ">
-        <div style="display: flex; flex-direction: row">
-            <?php
-            $c = 0;
-
-            //               echo $_SESSION['neskolkon'];
-            foreach ($_SESSION['neskolkon'] as $cells){
-                foreach ($cells as $cell)
-                {
-
-                    echo '
-<!-- мне кажется тут не требуется ссылка - это конечная страница деталей машины-->
-                        <div style="width: 180px; height: 112px">
-                            <img src="'.$cell.'" style="width: 100%">
-                        </div>
-                        '.implode($_SESSION['neskolkom'][$c]);
-
-                    $c++;
-                }
-            }
-            ?>
-        </div>
         <div style="text-decoration: none;
         background-color: #dedede;
         padding: 0.5px;
@@ -226,7 +206,72 @@ flex-direction: column;
     margin-left: 40px;
     height: 10px;">
             <strong>Модификации и комплектации</strong>
-        </p>
+	</p>
+
+<?php
+
+
+foreach ($_SESSION['modifications'] as $index => $model){
+
+
+
+echo '
+
+        <hr style="margin-top: 40px;
+        margin-left: 35px;
+        margin-bottom: 25px">
+        <div style="display:flex;
+        flex-direction: row">
+            <a href="" style="text-decoration: none;
+            font-family: Arial;
+            font-size: 25px;
+            color: blue;
+            margin-left: 40px;
+            height: 10px;
+            text-align: center;
+            color: #005bd1;
+            font-weight: bold;
+            text-align: left">'.$model[1].'
+            </a>
+            <p href="" style="text-decoration: none;
+            font-family: Arial;
+            font-size: 25px;
+            color: black;
+            margin-left: 200px;
+            height: 10px;
+            text-align: right;
+	    margin-top: 0px">';
+
+
+echo $model[3].'
+                
+            </p>
+        </div>
+        <div>
+            <p href="" style="text-decoration: none;
+            font-family: Arial;
+            font-size: 17px;
+            color: black;
+            margin-left: 40px;
+            height: 10px;
+            margin-top: 0px">
+                '.$model[2].'
+            </p>
+        </div>
+ 
+
+
+';
+
+
+
+}
+
+            ?>
+
+
+<!--
+
         <hr style="margin-top: 40px;
         margin-left: 35px;
         margin-bottom: 25px">
@@ -306,6 +351,7 @@ margin-top: 0px">
             </p>
         </div>
     </div>
+-->
 </div>
 </body>
 </html>
